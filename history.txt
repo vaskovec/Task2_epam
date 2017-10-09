@@ -1,0 +1,82 @@
+    1  python3
+    2  python
+    3  python python.py
+    4  cd d:
+    5  git init
+    6  git add README.md
+    7  echo "# Task2_epam" >> README.md
+    8  it init
+    9  git init
+   10  git add README.md
+   11  git commit -m "first commit"
+   12  git config --global user.email "vaskovecanna@gmail.com"
+   13  git config --global user.name "vaskovec"
+   14  git commit -m "first commit"
+   15  git remote add origin https://github.com/vaskovec/Task2_epam.git
+   16  git push -u
+   17  git push -u origin master
+   18  cd ~/.ssh
+   19  ls
+   20  ssh-keygen
+   21  git clone https://github.com/vaskovec/Task2_epam.git
+   22  cd ~/.ssh
+   23  git clone https://github.com/vaskovec/Task2_epam.git
+   24  cd Task2_epam
+   25  echo init message >> README.md
+   26  git add README.md
+   27  git cat -README.md
+   28  cat README.md
+   29  git commit -m "first commit added in master"
+   30  echo first commit >> README.md
+   31  cat README.md
+   32  git add README.md
+   33  git commit -m "second commit added in master"
+   34  echo second commit >> file.txt
+   35  git add file.txt
+   36  git commit -m "third commit added in master"
+   37  git branch develop
+   38  git checkout develop
+   39  echo changing file.txt from develop >> file.txt
+   40  git add file.txt
+   41  git commit -m "first commit added in develop"
+   42  echo changing README.md from develop >> README.md
+   43  git add README.md
+   44  git commit -m "second commit added in develop"
+   45  git checkout master
+   46  git merge develop
+   47  git push --all
+   48  echo string for rebase with conflict >> README.md
+   49  git add README.md
+   50  cat README.md
+   51  git commit -m "commit for rebase"
+   52  git checkout develop
+   53  echo commit in develop for rebase >> file.txt
+   54  git add file.txt
+   55  git commit -m "commit for rebase in develop"
+   56  echo commit for  rebase >> README.md
+   57  git add README.md
+   58  git commit -m "another commit for rebase"
+   59  git rebase master
+   60  vim README.md
+   61  git add README.md
+   62  git rebase --continue
+   63  git push --all
+   64  git checkout master
+   65  git merge develop
+   66  git checkout develop
+   67  echo cherry-pick >> file.txt
+   68  git add file.txt
+   69  git commit -m "commit for cherry-pick"
+   70  echo commit for revert >> README.md
+   71  git add README.md
+   72  git commit -m "commit for revert"
+   73  git log
+   74  git checkout master
+   75  git cherry-pick
+   76  37b0d7c62e7562f4eaac30abcd4a7526462070cc
+   77  git cherry-pick 37b0d7c62e7562f4eaac30abcd4a7526462070cc
+   78  git checkout develop
+   79  git log
+   80  git revert  e7275887218e565e6d7d5c80353ad689feb80ed4
+   81  git push --all
+   82  history > history.txt
